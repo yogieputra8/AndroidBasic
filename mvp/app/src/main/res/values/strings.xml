@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVP Sample</string>
+    <string name="implementing_mvp_pattern_in_this_application">Implementing MVP Pattern in this Application.</string>
+    <string name="get_next_quote">GET NEXT QUOTE</string>
+</resources>
