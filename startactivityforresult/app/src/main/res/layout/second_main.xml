@@ -12,27 +12,27 @@
     tools:context=".SecondActivity">
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/edt_txt_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="61dp"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_toRightOf="@+id/tv_hint"
         android:ems="10" />
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tv_hint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText1"
-        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignBaseline="@+id/edt_txt_1"
+        android:layout_alignBottom="@+id/edt_txt_1"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="35dp"
         android:text="Enter Message:" />
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btn_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/edt_txt_1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:text="Submit" />

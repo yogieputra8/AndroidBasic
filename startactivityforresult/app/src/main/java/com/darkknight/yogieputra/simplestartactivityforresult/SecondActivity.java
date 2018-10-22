@@ -8,24 +8,25 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class SecondActivity extends AppCompatActivity {
-    public static final int GET_DATA_FROM_SECOND_ACTIVITY = 5;
-    public static final String KEY_MESSAGE = "MESSAGE";
-    EditText editText1;
-    Button button1;
+    public static final int REQUEST_GET_DATA = 5;
+    public static final String KEY_MESSAGE = "message";
+    EditText edtInput1;
+    Button btnSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_main);
-        editText1 = (EditText) findViewById(R.id.editText1);
-        button1 = (Button) findViewById(R.id.button1);
-        button1.setOnClickListener(new View.OnClickListener() {
+
+        edtInput1 = (EditText) findViewById(R.id.edt_txt_1);
+        btnSubmit = (Button) findViewById(R.id.btn_submit);
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String message = editText1.getText().toString();
+                String inputFromUser = edtInput1.getText().toString();
                 Intent intent = new Intent();
-                intent.putExtra(KEY_MESSAGE, message);
-                setResult(GET_DATA_FROM_SECOND_ACTIVITY, intent);
+                intent.putExtra(KEY_MESSAGE, inputFromUser);
+                setResult(REQUEST_GET_DATA, intent);
                 finish();
             }
         });
