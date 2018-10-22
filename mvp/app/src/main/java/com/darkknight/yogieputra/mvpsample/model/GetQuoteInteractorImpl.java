@@ -1,6 +1,8 @@
-package com.darkknight.yogieputra.mvpsample;
+package com.darkknight.yogieputra.mvpsample.model;
 
 import android.os.Handler;
+
+import com.darkknight.yogieputra.mvpsample.contract.MainContract;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,12 +17,6 @@ public class GetQuoteInteractorImpl implements MainContract.GetQuoteInteractor {
             "If you tell the truth, you don't have to remember anything."
     );
 
-    private String getRandomString() {
-        Random random = new Random();
-        int index = random.nextInt(arrayList.size());
-        return arrayList.get(index);
-    }
-
     @Override
     public void getNextQuote(final OnFinishedListener onFinishedListener) {
         new Handler().postDelayed(new Runnable() {
@@ -29,5 +25,11 @@ public class GetQuoteInteractorImpl implements MainContract.GetQuoteInteractor {
                 onFinishedListener.onFinished(getRandomString());
             }
         }, 1200);
+    }
+
+    private String getRandomString() {
+        Random random = new Random();
+        int index = random.nextInt(arrayList.size());
+        return arrayList.get(index);
     }
 }

@@ -1,4 +1,4 @@
-package com.darkknight.yogieputra.mvpsample;
+package com.darkknight.yogieputra.mvpsample.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.darkknight.yogieputra.mvpsample.model.GetQuoteInteractorImpl;
+import com.darkknight.yogieputra.mvpsample.contract.MainContract;
+import com.darkknight.yogieputra.mvpsample.presenter.MainPresenterImpl;
+import com.darkknight.yogieputra.mvpsample.R;
 
 public class MainActivity extends AppCompatActivity implements MainContract.MainView {
     private TextView textView;

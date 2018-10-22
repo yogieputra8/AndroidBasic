@@ -1,4 +1,4 @@
-package com.darkknight.yogieputra.mvpsample;
+package com.darkknight.yogieputra.mvpsample.contract;
 
 public interface MainContract {
 

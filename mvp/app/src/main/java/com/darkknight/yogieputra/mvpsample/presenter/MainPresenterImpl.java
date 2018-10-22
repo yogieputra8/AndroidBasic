@@ -1,4 +1,6 @@
-package com.darkknight.yogieputra.mvpsample;
+package com.darkknight.yogieputra.mvpsample.presenter;
+
+import com.darkknight.yogieputra.mvpsample.contract.MainContract;
 
 public class MainPresenterImpl implements MainContract.Presenter, MainContract.GetQuoteInteractor.OnFinishedListener {
     private MainContract.MainView mainView;
