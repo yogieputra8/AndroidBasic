@@ -1,0 +1,4 @@
+#Wed Jun 13 14:44:51 WIB 2018
+base.0=/Users/nakama/Documents/Research/androidJava/MyIntentApp/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/nakama/Documents/Research/androidJava/MyIntentApp/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

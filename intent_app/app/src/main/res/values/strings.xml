@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Intent App</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="birth_place">Birth Place</string>
+    <string name="process">Process</string>
+    <string name="hasil">Hasil</string>
+</resources>
